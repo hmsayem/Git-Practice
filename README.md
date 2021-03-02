@@ -9,25 +9,25 @@ git diff --cached
 
 > Stage all and Commit
 ```
-git commit -a -m "C2:main Commit README.md"
+git commit -a -m <message>
 
 ```
 > Remove file from tracked files
 ```
-git rm delete.txt
-git -f rm delete.txt
+git rm <filename>
+git -f rm <filename>
 
 ```
 
 > Remove file from tracked files
 ```
-git rm delete.txt
-git -f rm delete.txt
+git rm <filename>
+git -f rm <filename>
 
 ```
 > Remove file 
 ```
-git mv file0.txt file1.txt
+git mv <oldfilename> <newfilename>
 
 ```
 > Commit History
@@ -46,7 +46,20 @@ git log --since=2.weeks
 
 > Undoing things
 ```
-git restore --staged file1.txt
-git restore  file1.txt
+git restore --staged <filename>
+git restore  <filename>
+
+```
+> Working with Remotes
+```
+git remote -v
+git remote add <shortname> <url>
+git remote rename <oldname> <newname>
+git remote remove <name>
+
+```
+> Fetching and Pulling
+```
+git pull
 
 ```
