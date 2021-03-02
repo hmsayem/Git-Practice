@@ -6,10 +6,9 @@ git diff
 git diff --cached
 
 ```
-
 > Stage all and Commit
 ```
-git commit -a -m <message>
+git commit -a -m "message"
 
 ```
 > Remove file from tracked files
@@ -18,7 +17,6 @@ git rm <filename>
 git -f rm <filename>
 
 ```
-
 > Remove file from tracked files
 ```
 git rm <filename>
@@ -43,7 +41,6 @@ git log --pretty=format:"%h %s" --graph
 git log --since=2.weeks
 
 ```
-
 > Undoing things
 ```
 git restore --staged <filename>
@@ -56,10 +53,20 @@ git remote -v
 git remote add <shortname> <url>
 git remote rename <oldname> <newname>
 git remote remove <name>
-
 ```
 > Fetching and Pulling
 ```
 git pull
+git push
 
+```
+```
+> Tagging
+```
+git tag 
+git tag -a <tagname> -m "message"
+git tag -a <tagname> <checksum> 
+git tag -d <tagname>
+git push origin --tags
+git push origin --delete <tagname>
 ```
