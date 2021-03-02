@@ -60,7 +60,6 @@ git pull
 git push
 
 ```
-```
 > Tagging
 ```
 git tag 
@@ -68,5 +67,4 @@ git tag -a <tagname> -m "message"
 git tag -a <tagname> <checksum> 
 git tag -d <tagname>
 git push origin --tags
-git push origin --delete <tagname>
-```
+git push origin --delZ
